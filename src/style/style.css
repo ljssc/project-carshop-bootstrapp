@@ -1,0 +1,26 @@
+/* .section-card
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+} */
+/* -SECTION- */
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/* -CARD- */
+.card{
+    margin: 10px 10px ;
+}
+/* -BUTTON- */
+.btn{
+    margin: 10px 10px;
+}
+/* -INPUT- */
+.inp{
+    color: black;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="bi bi-car-front-fill"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Купить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Продать</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Работа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-geo-alt"></i></i>Челябинск</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i>+7(999)-999-99-99</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/ea800bcd54da79edbdf0935da14dea29.jpg" class="d-block w-100 carousel-item"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f73c0865b990d72a3d8905cb2bdbdf19.jpg" class="d-block w-100 carousel-item"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fd46d41d13744629e5edae657eb519a9.jpg" class="d-block w-100 carousel-item"
+                            alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+        <section class="section-card grid">
+            <div class="card g-col-4" style="width: 18rem;">
+                <img src="img/ea800bcd54da79edbdf0935da14dea29.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Land Cruiser</h5>
+                    <p class="card-text">2017/Автомат</p>
+                    <div class="product-price">4 699 000 ₽</div>
+                    <a href="#" class="btn btn-primary">Приобрести</a>
+                </div>
+            </div>
+            <div class="card g-col-4" style="width: 18rem;">
+                <img src="img/fd46d41d13744629e5edae657eb519a9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Corolla Fielder</h5>
+                    <p class="card-text">2014/Автомат</p>
+                    <div class="product-price">1 319 000 ₽</div>
+                    <a href="#" class="btn btn-primary">Приобрести</a>
+                </div>
+            </div>
+            <div class="card g-col-4" style="width: 18rem;">
+                <img src="img/f73c0865b990d72a3d8905cb2bdbdf19.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Genesis G70</h5>
+                    <p class="card-text">2018/Автомат</p>
+                    <div class="product-price">2 999 000 ₽</div>
+                    <a href="#" class="btn btn-primary">Приобрести</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Оставить заявку
+            </button>
+        </section>
+
+    </footer>
+</body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Остались вопросы?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <p>Заполните форму и отправьте заявку. <br>Мы свяжемся с вами в ближайшее время и ответим<br> на все
+                    интересующие вас вопросы.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу информацию.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Телефон</label>
+                        <input type="phone" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+</html>
